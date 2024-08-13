@@ -21,31 +21,37 @@ import SocialPill from '@/components/icons/socialPill.astro';
 >
 	<main class="px-4">	
 	 <SectionContainer class="py-44 pb-32">
-		<img class="rounded-full w-16 h-16 mb-4" 
-    		src="https://media.licdn.com/dms/image/D4E03AQGMq6z7GehYGw/profile-displayphoto-shrink_800_800/0/1703008943318?e=2147483647&v=beta&t=BGQVLjDLl1gruz9m4Cit0xi5ib_LIEMcmR6lzZ6Eb44" 
-    		alt="daniel-photo">
-		<h1 class="text-white text-3xl md:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">Hola, Soy Daniel Berrio 
-			<a href="mailto:berriobarriosdaniel@gmail.com" target="_blank" rel="noopener" class="flex justify-center items-center hover:scale-105 transition">
-				<Badge>Open to work!</Badge>
-			</a>
-		</h1>
+		<div class="flex flex-row items-center">
+			<img class="rounded-full w-48 h-48 mr-5" 
+				src="https://media.licdn.com/dms/image/D4E03AQGMq6z7GehYGw/profile-displayphoto-shrink_800_800/0/1703008943318?e=2147483647&v=beta&t=BGQVLjDLl1gruz9m4Cit0xi5ib_LIEMcmR6lzZ6Eb44" 
+				alt="daniel-photo">
+			<div class="flex flex-col">
+				<h1 class="text-white text-3xl md:text-4xl font-bold pb-2 lg:pb-2 mt-8">Hola, Soy Daniel Berrío.</h1>
+				<a href="https://api.whatsapp.com/send?phone=573022521320&text=Hola%20Daniel,%20me%20interesa%20trabajar%20contigo." target="_blank" rel="noopener" class="flex flex-row items-center hover:scale-105 transition">
+					<Badge>Open to work!</Badge>
+				</a>
+			</div>
+		</div>
+		
+		
+			
 		
 		<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-			<span>+2 años de experiencia.</span> <span class="text-yellow-200/90">Analista y Desarrollaor de software</span>
+			<span>+2 años de experiencia.</span> <span class="text-yellow-200/90">Analista y Desarrollador de Software</span>
 			<span class="text-red-200/90">de Montería, Colombia.</span>
-			<span class="opacity-75"> Especializado en el desarrollo web.</span>
+			<span class="opacity-75"> Especializado en el desarrollo web y Business Intelligence.</span>
 		</h2>
 
 		<nav class="flex gap-x-4 mt-8 flex-wrap">
-			<SocialPill href="https://www.linkedin.com/in/daniel-berrio-barrios/">
+			<SocialPill href="https://www.linkedin.com/in/daniel-berrio-barrios/" target="_blank" rel="noopener">
 				<LinkedinIcon class="size-4 md:size-6"/>
 				LinkedIn
 			</SocialPill>
-			<SocialPill href="https://github.com/KingDanyDev">
+			<SocialPill href="https://github.com/KingDanyDev" target="_blank" rel="noopener">
 				<GithubIcon class="size-4 md:size-6"/>
 				GitHub
 			</SocialPill>
-			<SocialPill href="mailto:berriobarriosdaniel@gmail.com">
+			<SocialPill href="mailto:berriobarriosdaniel@gmail.com" target="_blank" rel="noopener">
 				<MailIcon class="size-4 md:size-6"/>
 				Enviame un correo
 			</SocialPill>
