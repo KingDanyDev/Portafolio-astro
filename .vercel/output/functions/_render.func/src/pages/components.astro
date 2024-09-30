@@ -1,0 +1,34 @@
+---
+import Badge from "@/components/Badge.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import SocialPill from "@/components/icons/socialPill.astro";
+import Layout from "@/layouts/Layout.astro";
+import LinkedinIcon from "@/components/icons/Linkedin.astro";
+
+---
+
+<Layout 
+title="Desing System portafolio.dev"
+description="Catalogo de componentes de nuestro portafolio">
+
+<SectionContainer class="py-44 pb-32 flex flex-col gap-y-10">
+<article class="mb-10">
+<h1 class="mb-4 text-xl font-semibold">&lt;Badge /&gt;</h1>
+
+<Badge>Contactame</Badge>
+
+</article>
+
+<article class="mb-10">
+<h1 class="mb-4 text-xl font-semibold">&lt;  SocialPill /&gt;</h1>
+<div class="flex">
+    <SocialPill href="https://www.linkedin.com/in/daniel-berrio-barrios/" target="_blank" rel="noopener">
+        <LinkedinIcon class="size-4 md:size-6"/>
+        LinkedIn
+    </SocialPill>
+</div>
+</article>
+</SectionContainer>
+
+
+</Layaout>
